@@ -1,1 +1,1 @@
-export const API='https://zenclasseventmanagement.onrender.com/api'
+export const API='https://zen-student-management.onrender.com/api'
