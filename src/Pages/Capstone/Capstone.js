@@ -10,10 +10,6 @@ import { API } from "../../global";
 function Capstone() {
   const param = useParams();
   const [user, setUser] = useState({});
-
-  useEffect(() => {
-    loadData()
-  }, []);
   
   let loadData = async () => {
     try {
@@ -31,6 +27,11 @@ function Capstone() {
       console.log(error);
     }
   };
+  
+  useEffect(() => {
+    loadData()
+  }, []);
+
   let formik = useFormik({
     initialValues: {
       title: "",
